@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import AddBlog from '@/components/routepages/AddBlog';
+import Image from 'next/image';
 
 const { NEXT_PUBLIC_HOST_URL } = process.env;
 
@@ -44,7 +45,7 @@ async function Page() {
         className="flex flex-col items-start justify-between group bg-white shadow-md rounded-lg overflow-hidden"
       >
         <div className="w-full h-60 md:h-[330px] overflow-hidden">
-          <img
+          <Image width={500} height={500}
             src={item.image}
             alt={item.title}
             className="object-cover w-full h-full group-hover:opacity-75 transition-opacity duration-300"

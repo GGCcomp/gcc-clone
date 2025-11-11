@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import EditBlog from '@/components/routepages/EditBlog';
+import Image from 'next/image';
 
 const {NEXT_PUBLIC_HOST_URL} = process.env;
 
@@ -29,7 +30,7 @@ async function page({params}) {
         <EditBlog item={data} api={`${NEXT_PUBLIC_HOST_URL}/api/landingPage/blog`} />
         <p className='text-3xl md:text-5xl font-bold tracking-wider py-8'>{data.title}</p>
         <div className='relative h-[80vh] w-[80vw] md:h-[60vh] md:w-[40vw]'>
-          <img src={data.image} alt={data.title} className='h-full w-full object-cover'/>
+          <Image width={500} height={500} src={data.image} alt={data.title} className='h-full w-full object-cover'/>
         </div>
         <div className='w-3/4 py-4'>
         <p className='px-10'>{data.desc}</p>

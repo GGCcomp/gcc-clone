@@ -16,6 +16,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Client, Account } from "appwrite";
 import BeatLoader from "react-spinners/BeatLoader";
 import NavFormModal from './NavFormModal';
+import Image from 'next/image';
 
 function Navbar() {
   const [links, setLinks] = useState([]);
@@ -230,7 +231,7 @@ function Navbar() {
                 setIsOpen(!open);
               }}>
                 <div>
-                  <img src={item.img[0]} alt={item.title} className='h-20 w-20 border rounded-md mr-2' />
+                  <Image width={500} height={500} src={item.img[0]} alt={item.title} className='h-20 w-20 border rounded-md mr-2' />
                 </div>
                 <p>{item.title}</p>
               </div>
@@ -346,7 +347,7 @@ function Navbar() {
                       </button>
 
                     )}
-                    <Link href={img.url}><img src={img.img} alt='navbar_Images' className='w-64 h-full object-cover' loading='lazy' /></Link>
+                    <Link href={img.url}><Image width={500} height={500} src={img.img} alt='navbar_Images' className='w-64 h-full object-cover' loading='lazy' /></Link>
                     <p className='absolute bottom-0 left-0 right-0 text-center text-white bg-black bg-opacity-50 py-2'>
                       {img.text}
                     </p>
@@ -370,7 +371,7 @@ function Navbar() {
                     </button>
 
                   )}
-                  <Link href={img.url}><img src={img.img} alt='navbar_Images' className='w-64 h-[95%] object-cover' loading='lazy' /></Link>
+                  <Link href={img.url}><Image width={500} height={500} src={img.img} alt='navbar_Images' className='w-64 h-[95%] object-cover' loading='lazy' /></Link>
                   <p className='absolute bottom-4 left-0 right-0 text-center text-white bg-black bg-opacity-50 py-2'>
                     {img.text}
                   </p>
@@ -540,7 +541,7 @@ function Navbar() {
                           {link.images && (
                             <div className={dynamicStyles.submenuImagesContainer}>
                               {link.images.map((img, i) => (
-                                <img src={img.img} alt={img.alt} className={dynamicStyles.submenuImage} key={i} />
+                                <Image width={500} height={500} src={img.img} alt={img.alt} className={dynamicStyles.submenuImage} key={i} />
                               ))}
                             </div>
                           )}

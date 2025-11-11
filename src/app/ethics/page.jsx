@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function page() {
     return (
@@ -16,7 +17,7 @@ function page() {
                         </div>
                     </div>
                     <div className='relative w-full md:w-4/12 order-1 md:order-2'>
-                        <img src="./Ethics1.webp" alt='ethic_img'
+                        <Image width={500} height={500} src="./Ethics1.webp" alt='ethic_img'
                             className='w-full h-full object-cover object-left' />
                     </div>
                 </div>
@@ -25,7 +26,7 @@ function page() {
             <div className='p-10 md:p-16'>
                 <div className='md:flex justify-between md:h-[80vh] md:gap-12'>
                     <div className='w-full md:w-1/2 h-full mb-8 md:m-0'>
-                        <img src="./CSR Golden Ghaf.webp" alt="ethics_img"
+                        <Image width={500} height={500} src="./CSR Golden Ghaf.webp" alt="ethics_img"
                             className='w-full h-full object-cover object-top' loading='lazy'
                         />
                     </div>
@@ -57,7 +58,7 @@ function page() {
                     </div>
 
                     <div className='w-full md:w-1/2 h-full'>
-                        <img src="https://sahara-theme.myshopify.com/cdn/shop/files/Untitled_design.jpg" alt="ethics_img"
+                        <Image width={500} height={500} src="https://sahara-theme.myshopify.com/cdn/shop/files/Untitled_design.jpg" alt="ethics_img"
                             className='w-full h-full object-cover' loading='lazy'
                         />
                     </div>
@@ -81,14 +82,14 @@ function page() {
                         </div>
                     </div>
                     <div className='relative w-full md:w-5/12 order-1 md:order-2'>
-                        <img src='https://sahara-theme.myshopify.com/cdn/shop/files/D8308091-F463-4F8B-ACC7-A745F9906B21.jpg' alt='ethic_img'
+                        <Image width={500} height={500} src='https://sahara-theme.myshopify.com/cdn/shop/files/D8308091-F463-4F8B-ACC7-A745F9906B21.jpg' alt='ethic_img'
                             className='w-full object-cover' loading='lazy' />
                     </div>
                 </div>
             </div>
 
             <div className='h-[calc(100vh-8rem)] relative'>
-                <img
+                <Image width={500} height={500}
                     src="https://sahara-theme.myshopify.com/cdn/shop/files/0AE53A26-31CD-48D8-A65E-257BC868C870_1.jpg"
                     loading='lazy'
                     alt="banner"

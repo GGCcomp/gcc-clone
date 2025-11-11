@@ -1,4 +1,5 @@
 import RegisterForm from '@/components/RegisterForm';
+import Image from 'next/image';
 import Link from "next/link";
 
 function Register() {
@@ -6,7 +7,7 @@ function Register() {
   return (
     <div className="h-[calc(114.3vh)] flex pt-36">
         <div className='hidden md:block h-full w-1/2'>
-            <img src="https://sahara-theme.myshopify.com/cdn/shop/files/account3.jpg" alt="" />
+          <Image width={500} height={500} src="https://sahara-theme.myshopify.com/cdn/shop/files/account3.jpg" alt="" />
         </div>
         <div className="h-full md:w-1/2 flex flex-col justify-center pl-10 md:pl-20 md:pr-10 items-start">
             <div className="md:w-full flex flex-col justify-center items-start border-b py-16">

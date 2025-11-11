@@ -6,6 +6,7 @@ import { CiSearch } from "react-icons/ci";
 import { HiMiniArrowUturnRight } from "react-icons/hi2";
 import BeatLoader from "react-spinners/BeatLoader";
 import { toast, Toaster } from 'sonner';
+import Image from 'next/image';
 
 const SearchModal = ({ isOpen, onClose }) => {
   const [query, setQuery] = useState('');
@@ -63,7 +64,7 @@ const SearchModal = ({ isOpen, onClose }) => {
                 onClose();
               }}>
                 <div>
-                  <img src={item.img[0]} alt={item.title} className='h-20 w-20 border rounded-md mr-2' />
+                  <Image width={500} height={500} src={item.img[0]} alt={item.title} className='h-20 w-20 border rounded-md mr-2' />
                 </div>
                 <p className='text-black'>{item.title}</p>
               </div>

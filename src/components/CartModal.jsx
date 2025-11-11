@@ -8,6 +8,7 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import BeatLoader from "react-spinners/BeatLoader";
 import { useRouter } from 'next/navigation';
 import ProductPrice from './ProductPrice';
+import Image from 'next/image';
 
 function CartModal({ isOpen, onClose }) {
   const [cartData, setCartData] = useState([]);
@@ -178,7 +179,7 @@ function CartModal({ isOpen, onClose }) {
               ) : cartData && cartData.length > 0 ? (
                 cartData.map((item, i) => (
                   <div key={i} className="flex items-center p-4 border-b border-gray-200">
-                    <img src={item.img[0]} alt={item.title} className="w-20 h-28 object-cover rounded mr-4" />
+                    <Image width={500} height={500} src={item.img[0]} alt={item.title} className="w-20 h-28 object-cover rounded mr-4" />
                     <div className='flex justify-between w-full'>
                       <ul className="flex-1">
                         <li className="mb-2">

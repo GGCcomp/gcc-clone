@@ -18,7 +18,7 @@ function ShopAll({ product, img, title, url, categories }) {
   return (
     <div className='pt-36'>
       <div className='h-80 relative'>
-        <img
+        <Image width={500} height={500}
           src={img}
           alt="img"
           className='h-full w-full object-cover'

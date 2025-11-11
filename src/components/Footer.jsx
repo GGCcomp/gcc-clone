@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
 
         <div className='w-full md:w-1/3 h-full flex-shrink-0 flex flex-col justify-center border-x items-center gap-5'>
-         <img src="/box.gif" alt="contact_img" className='w-8/12 object-cover'/>
+         <Image width={500} height={500} src="/box.gif" alt="contact_img" className='w-8/12 object-cover'/>
         </div>
 
         <div className='w-full md:w-1/3 h-full flex-shrink-0 flex flex-col justify-center items-center gap-5'>
@@ -66,7 +66,7 @@ const Footer = () => {
       </div>
       <div className='h-full flex flex-col justify-center items-center'>
         <div className='h-full flex flex-col justify-center gap-4 items-center w-7/12'>
-        <img src="/banner.webp" alt="banner" className='w-full object-cover' loading='lazy'/>
+        <Image width={500} height={500} src="/banner.webp" alt="banner" className='w-full object-cover' loading='lazy'/>
         <p className='text-2xl text-center'>LUCKNOW</p>
         </div>
         <p className='self-start p-4 text-sm'>© 2024 GOLDEN GHAF Trading & Consultancy LLP, All rights reserved.</p>

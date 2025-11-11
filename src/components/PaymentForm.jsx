@@ -13,6 +13,7 @@ import usePrice from '@/hooks/usePrice';
 import BeatLoader from "react-spinners/BeatLoader";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import Image from 'next/image';
 
 
 const countryCurrencyMap = {
@@ -435,7 +436,7 @@ function PaymentForm() {
                 <div className="fixed inset-0 z-50 flex justify-center items-center bg-transparent">
                     <div className='flex flex-col items-center bg-white rounded-md p-4'>
                         <span className="mb-4 text-2xl text-gray-700">Creating order summary, please wait...</span>
-                        <img src="/box.gif" alt="Packaging Animation" className="mb-4 w-28 h-28" />
+                        <Image width={500} height={500} src="/box.gif" alt="Packaging Animation" className="mb-4 w-28 h-28" />
                     </div>
                 </div>
             )}
@@ -456,7 +457,7 @@ function PaymentForm() {
                                             <div key={index}>
                                                 <div className="flex items-start gap-4 mb-4">
                                                     <div className="w-32 h-28 max-lg:w-24 max-lg:h-24 flex p-3 shrink-0 bg-gray-600 rounded-md">
-                                                        <img src={item.img[0]} alt={item.title} className="w-full object-contain" />
+                                                        <Image width={500} height={500} src={item.img[0]} alt={item.title} className="w-full object-contain" />
                                                     </div>
                                                     <div className="w-full">
                                                         <div className='flex justify-between mb-2'>

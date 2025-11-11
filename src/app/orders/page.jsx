@@ -4,6 +4,7 @@ import { toast } from 'sonner';
 import { decode } from 'jsonwebtoken';
 import { useSession } from 'next-auth/react';
 import { BeatLoader } from 'react-spinners';
+import Image from 'next/image';
 
 const getData = async (email, isAdmin, filter, orderID) => {
     try {
@@ -175,7 +176,7 @@ const Page = () => {
                                                             }).format(new Date(order.createdAt))
                                                             : 'Date not available'}
                                                     </div>
-                                                    <img src={product.img[0]} alt={product.title} className="h-16 w-16 rounded mr-4" />
+                                                    <Image width={500} height={500} src={product.img[0]} alt={product.title} className="h-16 w-16 rounded mr-4" />
                                                 </div>
                                                 <div className="ml-auto text-right text-sm">
                                                     <div className="font-semibold">Name: {order.firstName} {order.lastName}</div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function page() {
@@ -12,7 +13,7 @@ function page() {
             <p className='py-2 text-xl '>Our company prides itself on brand adaptability, committed to continuous improvement and seamlessly adapting to new fashion trends while steadfastly maintaining our brand mission. We not only follow but also create new fashion trends, setting path-breaking standards in the industry. By adhering to global manufacturing and quality standards, we ensure our products meet the highest benchmarks. Our proactive approach in trendsetting showcases our dedication to innovation and excellence in the global fashion arena.</p>
           </div>
           <div className='w-full md:w-1/2 flex justify-center mb-5 md:m-0'>
-            <img src="/GGC_About.webp" loading='lazy' alt="about_image" className='w-full md:w-3/4 h-3/6 object-cover' />
+            <Image width={500} height={500} src="/GGC_About.webp" loading='lazy' alt="about_image" className='w-full md:w-3/4 h-3/6 object-cover' />
           </div>
         </div>
       </div>

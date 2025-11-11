@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
 import EditLookbook from '@/components/routepages/EditLookbook';
+import Image from 'next/image';
 
 
 const getData = async () => {
@@ -24,7 +25,7 @@ async function page() {
     <div className='pt-36 md:h-[165vh]'>
       {data.length ? data.map((item, i) => <Fragment key={i}>
         <div className='relative h-80'>
-          <img src={item.banner} alt="banner" loading='lazy' className='w-full h-full object-cover' />
+          <Image width={500} height={500} src={item.banner} alt="banner" loading='lazy' className='w-full h-full object-cover' />
           <div className='absolute inset-0 text-white flex flex-col justify-center items-center gap-4'>
             <p>{item.title}</p>
             <p className='text-3xl md:text-4xl tracking-wider uppercase'>{item.desc}</p>
@@ -37,7 +38,7 @@ async function page() {
 
         <div className='md:flex justify-center gap-10 mt-24'>
           <div className='relative w-full md:w-1/2 flex justify-center md:justify-end'>
-            <img
+            <Image width={500} height={500}
               src={item.imageL}
               loading='lazy'
               alt="lookbook_img"
@@ -51,7 +52,7 @@ async function page() {
             </Link>
           </div>
           <div className='relative w-full md:w-1/2 flex justify-center md:justify-start mt-4 md:m-0'>
-            <img
+            <Image width={500} height={500}
               src={item.imageR}
               loading='lazy'
               alt="lookbook_img"

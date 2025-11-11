@@ -5,6 +5,7 @@ import SizeSelector from '@/components/SizeSelector';
 import ProductPrice from '@/components/ProductPrice';
 import CompleteSet from '@/components/CompleteSet';
 import Faq from '@/components/Faq';
+import Image from 'next/image';
 
 const {NEXT_PUBLIC_HOST_URL} = process.env;
 
@@ -76,7 +77,7 @@ async function page({ params }) {
           </div>
 
           <div className='hidden md:block w-4/12'>
-            <img src="https://sahara-theme.myshopify.com/cdn/shop/files/FAE_Hotel_Sages_-794_1.jpg?v=1677685612&width=720" loading='lazy' alt="banner" className='w-full h-5/6'/>
+            <Image width={500} height={500} src="https://sahara-theme.myshopify.com/cdn/shop/files/FAE_Hotel_Sages_-794_1.jpg?v=1677685612&width=720" loading='lazy' alt="banner" className='w-full h-5/6'/>
           </div>
           
         </div>

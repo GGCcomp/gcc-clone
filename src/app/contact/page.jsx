@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const ContactUs = () => {
@@ -22,7 +23,7 @@ const ContactUs = () => {
       </div>
       </div>
       <div className='w-full md:w-1/2 flex justify-center mb-4 md:m-0'>
-        <img src="/GGC_Contact.webp" alt="ggc_contact" className='w-8/12 object-cover'/>
+        <Image width={500} height={500} src="/GGC_Contact.webp" alt="ggc_contact" className='w-8/12 object-cover'/>
       </div>
     </div>
   );
